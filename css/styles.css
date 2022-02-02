@@ -15,6 +15,7 @@ box-sizing: inherit;
 img {
     width: 100%;
 }
+
 /*•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•
 ::: (\_(\ ...*...*...*...*...*...*...*...*...*...*...*...*
 *: (=' :') ::::::::  GLOBALES   :::::::::::
@@ -51,10 +52,17 @@ p {
     width: 80%;
     margin: auto;
 }
+@media (max-width: 1300px) {
+    .contenedor {
+        width: 90%;
+    }
+}
 .noMargin {
     margin: 0;
 }
-
+.textAlign {
+    text-align: center;
+}
 /*•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•
 ::: (\_(\ ...*...*...*...*...*...*...*...*...*...*...*...*
 *: (=' :') ::::::::  HEADER Y PRESENTACION   :::::::::::
@@ -133,6 +141,36 @@ p {
 
 /*•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•
 ::: (\_(\ ...*...*...*...*...*...*...*...*...*...*...*...*
+*: (=' :') ::::::::  ASIDE   :::::::::::
+•.. (,('')('')¤...*...*...*...*...*...*...*...*...*...*...*
+¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸*/
+
+.taller {
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+}.taller:last-child { border-bottom: none; }
+.taller__texto {
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    margin: 3.2rem 0;
+}
+.taller__texto--marcado {
+    font-weight: bold;
+}
+.taller__boton {
+    width: 100%;
+    background-color: var(--colorPrincipal);
+    color: white;
+    text-transform: uppercase;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+/*•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•
+::: (\_(\ ...*...*...*...*...*...*...*...*...*...*...*...*
 *: (=' :') ::::::::  FOOTER   :::::::::::
 •.. (,('')('')¤...*...*...*...*...*...*...*...*...*...*...*
 ¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸*/
@@ -140,4 +178,63 @@ p {
 .footer {
     height: 13.5rem;
     background-color: black;
+}
+
+/*•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•
+::: (\_(\ ...*...*...*...*...*...*...*...*...*...*...*...*
+*: (=' :') ::::::::  NOSOTROS   :::::::::::
+•.. (,('')('')¤...*...*...*...*...*...*...*...*...*...*...*
+¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸*/
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/*•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•
+::: (\_(\ ...*...*...*...*...*...*...*...*...*...*...*...*
+*: (=' :') ::::::::  cURSOS   :::::::::::
+•.. (,('')('')¤...*...*...*...*...*...*...*...*...*...*...*
+¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸*/
+
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 3rem 0;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+}.cursos:last-child {
+    border: none;
+    margin-bottom: 3rem;
+}
+
+/*•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•
+::: (\_(\ ...*...*...*...*...*...*...*...*...*...*...*...*
+*: (=' :') ::::::::  CONTACTO   :::::::::::
+•.. (,('')('')¤...*...*...*...*...*...*...*...*...*...*...*
+¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸*/
+
+.contacto {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+}
+.formulario {
+    margin: 0 3rem;
+    padding: 6rem;
+}
+.formulario__campos {
+    font-family: var(--fuenteSecundaria);
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+.formulario__label {
+    flex-basis: 8rem;
+}
+.formulario__textarea {
+    width: 90%;
+    height: 20rem;
 }
