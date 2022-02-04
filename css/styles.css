@@ -137,6 +137,8 @@ p {
     font-weight: bold;
     padding: 1.5rem 3rem;
     margin-bottom: 2rem;
+}.blogs__blog__boton:hover {
+    cursor: pointer;
 }
 
 /*•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•
@@ -167,6 +169,8 @@ p {
     line-height: 1.8;
     border: none;
     margin-bottom: 2rem;
+}.taller__boton:hover {
+    cursor: pointer;
 }
 
 /*•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•
@@ -218,11 +222,14 @@ p {
 
 .contacto {
     background-image: url(../img/contacto.jpg);
+    background-size: cover;
     height: 40rem;
 }
 .formulario {
-    margin: 0 3rem;
-    padding: 6rem;
+    margin: -5rem auto 0 auto;
+    padding: 5rem;
+    width: 95%;
+    background-color: white;
 }
 .formulario__campos {
     font-family: var(--fuenteSecundaria);
@@ -232,9 +239,18 @@ p {
     margin-bottom: 2rem;
 }
 .formulario__label {
+    align-items: center;
+    line-height: 3rem;
     flex-basis: 8rem;
+    height: 3rem;
+}
+.formulario__input {
+    height: 3rem;
+    flex-grow: 1;
+    border: 1px solid #e4e4e4;
 }
 .formulario__textarea {
     width: 90%;
     height: 20rem;
+    border: 1px solid #e4e4e4;
 }
